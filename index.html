@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+
+    <link href="styling.css" rel="stylesheet/css" />
+
+    <title>Weather Dashboard</title>
+</head>
+
+<body>
+
+    <header class="text-center">
+        <nav class="  navbar-dark bg-dark  ">
+            <div>
+                <h1 style="color: white;">Weather Dashboard</h1>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-3">
+                <h3>Search for a City:</h3>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control cityName" placeholder="Search for a City"
+                        aria-label="City Search" aria-describedby="button-addon2">
+                    <button class="btn btn-primary" type="button" id="button-addon2"><i
+                            class="fas fa-search searchBtn"></i></button>
+                </div>
+                <ul class="list-group">
+                    <!-- <li class="list-group-item">Austin</li>
+                    <li class="list-group-item">Chicago</li>
+                    <li class="list-group-item">New York</li>
+                    <li class="list-group-item">San Francisco</li>
+                    <li class="list-group-item">Atlanta</li> -->
+                </ul>
+
+
+            </div>
+
+            <div class="col-lg-9">
+                <div class="todayWeather">
+                </div>
+
+                <div class="fiveDayForecast">
+                    <h3>5-Day Forecast</h3>
+                    <div class="card-deck"></div>
+                    <div class="card">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./script.js"></script>
+
+</body>
+
+</html>

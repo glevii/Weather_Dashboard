@@ -24,7 +24,7 @@ function currentWeather() {
     var lon = todayForecast.coord.lon;
 
     todayWeather.innerHTML = todayWeather.innerHTML + `<div class="jumbotron">
-    <h3 class="today">${todayForecast.name} (${moment(todayForecast.dt, "X").format("DD/MM/YYYY")}) <img src="http://openweathermap.org/img/w/${todayForecast.weather[0].icon}.png"
+    <h3 class="today">${todayForecast.name} (${moment(todayForecast.dt, "X").format("DD/MM/YYYY")}) <img src="https://openweathermap.org/img/w/${todayForecast.weather[0].icon}.png"
             class="image" alt="...">
     </h3>
     <p class="temperature">Temperature: ${todayForecast.main.temp} °C</p>
@@ -88,7 +88,7 @@ function fiveDay() {
         <div>
            <h5>${moment(fiveDayForecastArray[i].dt, "X").format("DD/MM/YYYY")}</h5>
            </div>
-           <img src="http://openweathermap.org/img/w/${fiveDayForecastArray[i].weather[0].icon}.png" class="image" alt="...">
+           <img src="https://openweathermap.org/img/w/${fiveDayForecastArray[i].weather[0].icon}.png" class="image" alt="...">
            <div class="card-body">
                <p class="card-text">Temp: ${fiveDayForecastArray[i].main.temp} °C</p>
                <p class="card-text">Humidity: ${fiveDayForecastArray[i].main.humidity}%</p>

@@ -7,7 +7,7 @@ searchBtn.addEventListener("click", function () {
 
 function currentWeather() {
   var cityName = document.querySelector(".cityName").value;
-  var queryURL = `http://api.openweathermap.org/data/2.5/weather?q=${cityName},au&appid=0275a6d35dd97e39a7e43e6ae04fd495&units=metric`;
+  var queryURL = `https://api.openweathermap.org/data/2.5/weather?q=${cityName},au&appid=0275a6d35dd97e39a7e43e6ae04fd495&units=metric`;
   
   var todayWeather = document.querySelector(".todayWeather");
   
@@ -70,7 +70,7 @@ function getUVIndex(lat, lon) {
 
 function fiveDay() {
   var cityName = document.querySelector(".cityName").value;
-  var queryURL = `http://api.openweathermap.org/data/2.5/forecast?q=${cityName},au&appid=0275a6d35dd97e39a7e43e6ae04fd495&units=metric`;
+  var queryURL = `https://api.openweathermap.org/data/2.5/forecast?q=${cityName},au&appid=0275a6d35dd97e39a7e43e6ae04fd495&units=metric`;
 
   var cardDeck = document.querySelector(".card-deck");
 

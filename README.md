@@ -16,7 +16,7 @@ A simple website that allows the user to check the weather of the location they 
 ## Usage
 
 The user will first require to enter the name of the city they want the weather for, once the user clicks on the search button the weather will be displayed, as per below.<br>
-<img src="demo.jpg" alt="App in action"/>
+<img src="demo.JPG" alt="App in action"/>
 
 
 ## Links
